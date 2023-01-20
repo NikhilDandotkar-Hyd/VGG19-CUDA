@@ -1,0 +1,35 @@
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+What works in this code
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+1) Train the VGG19 network with random initilization 
+2) Predict the image with pretrained weights
+3) Further Train the pretrained weights
+
+********************************************************************
+how to execute the code
+********************************************************************
+
+step - 1: Run the make file
+
+step - 2:
+
+For training 
+   To train VGG19 with random weights execute following command
+          ./exec train random <# of epoch> <optimizer> [Note: code supports sgd+momentum optimizer as of now]
+   ------------------------------------------------------------
+   Example : ./exec train random 1 sgd_momentum
+   ------------------------------------------------------------
+   
+   To train VGG19 with weights loaded from the text file 
+          ./exec train load <path of weights> <# of epoch> <optimizer> [Note: code supports sgd+momentum optimizer as of now]
+
+
+For Predicting
+   To predict execute the following command  [NOTE : This command is not active as of now]
+          ./exec predict weights <path of weights> image <path of image>
+====================================================================
+Pending Items
+====================================================================
+1) write the weights to a text file
+
+
